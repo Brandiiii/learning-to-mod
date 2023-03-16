@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=true": { "model": "demomod:block/ruby_lamp_on" },
+    "lit=false": { "model": "demomod:block/ruby_lamp_off" }
+  }
+}

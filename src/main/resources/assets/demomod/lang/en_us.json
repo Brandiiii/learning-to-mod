@@ -6,6 +6,7 @@
   "block.demomod.ruby_block": "Block of Ruby",
   "block.demomod.ruby_ore": "Ruby Ore",
   "block.demomod.deepslate_ruby_ore": "Deepslate Ruby Ore",
+  "block.demomod.ruby_lamp": "Ruby Lamp",
 
   "itemGroup.demo_tab": "Demo Mod"
 }
