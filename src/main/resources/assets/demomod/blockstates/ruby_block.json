@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "demomod:block/ruby_block" }
+  }
+}

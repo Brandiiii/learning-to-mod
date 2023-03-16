@@ -1,0 +1,10 @@
+{
+  "item.demomod.ruby": "Ruby",
+  "item.demomod.raw_ruby": "Raw Ruby",
+
+  "block.demomod.ruby_block": "Block of Ruby",
+  "block.demomod.ruby_ore": "Ruby Ore",
+  "block.demomod.deepslate_ruby_ore": "Deepslate Ruby Ore",
+
+  "itemGroup.demo_tab": "Demo Mod"
+}

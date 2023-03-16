@@ -1,6 +1,8 @@
 package dev.brandonoconnell.demomod;
 
 import com.mojang.logging.LogUtils;
+import dev.brandonoconnell.demomod.block.ModBlocks;
+import dev.brandonoconnell.demomod.item.ModItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -17,6 +19,9 @@ public class DemoMod {
 
     public DemoMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
