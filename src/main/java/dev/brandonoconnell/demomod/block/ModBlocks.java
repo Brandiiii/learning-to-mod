@@ -24,18 +24,21 @@ public class ModBlocks {
 
     //
     public static final RegistryObject<Block> RUBY_BLOCK = registerBlock("ruby_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+            () -> new Block(BlockBehaviour.Properties
+                    .of(Material.STONE)
                     .strength(6f)
                     .requiresCorrectToolForDrops()),
             ModCreativeModTabs.DEMO_TAB);
     public static final RegistryObject<Block> RUBY_ORE = registerBlock("ruby_ore",
-            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+            () -> new DropExperienceBlock(BlockBehaviour.Properties
+                    .of(Material.STONE)
                     .strength(6f)
                     .requiresCorrectToolForDrops(),
                     UniformInt.of(3, 7)),
             ModCreativeModTabs.DEMO_TAB);
     public static final RegistryObject<Block> DEEPSLATE_RUBY_ORE = registerBlock("deepslate_ruby_ore",
-            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+            () -> new DropExperienceBlock(BlockBehaviour.Properties
+                    .of(Material.STONE)
                     .strength(6f)
                     .requiresCorrectToolForDrops(),
                     UniformInt.of(3, 7)),
