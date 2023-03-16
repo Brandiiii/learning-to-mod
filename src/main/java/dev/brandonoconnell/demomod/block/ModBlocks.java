@@ -1,6 +1,7 @@
 package dev.brandonoconnell.demomod.block;
 
 import dev.brandonoconnell.demomod.DemoMod;
+import dev.brandonoconnell.demomod.block.custom.RubyLampBlock;
 import dev.brandonoconnell.demomod.item.ModCreativeModTabs;
 import dev.brandonoconnell.demomod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -42,6 +43,13 @@ public class ModBlocks {
                     .strength(6f)
                     .requiresCorrectToolForDrops(),
                     UniformInt.of(3, 7)),
+            ModCreativeModTabs.DEMO_TAB);
+    public static final RegistryObject<Block> RUBY_LAMP = registerBlock("ruby_lamp",
+            () -> new RubyLampBlock(BlockBehaviour.Properties
+                    .of(Material.STONE)
+                    .strength(6f)
+                    .requiresCorrectToolForDrops()
+                    .lightLevel(state -> state.getValue(RubyLampBlock.LIT) ? 15 : 0)),
             ModCreativeModTabs.DEMO_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
